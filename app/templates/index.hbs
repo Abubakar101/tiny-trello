@@ -1,1 +1,23 @@
-{{outlet}}
+<div class='list-component'>
+	{{#each model as |list|}}
+		{{todo-list 
+			list=list 
+			boxEnabled=boxEnabled
+			newItem=newItem 
+			selectItem='selectItem'
+			addItem='addItem'}}
+	{{/each}}
+
+
+	{{add-todo-list }}
+</div>
+
+{{#if boxEnabled}}
+
+	{{detail-view 
+		itemInfo=itemInfo
+		newItem=newItem 
+		toggleBox='toggleBox'
+		delItem='delItem'}}
+
+{{/if}}

@@ -1,0 +1,42 @@
+<div class='todo-list-detail-view-container'>
+  <div {{action 'toggleBox'}} class='toggle-detail-view'></div>
+  <div class='todo-list-detail-body'>
+
+    <div class='todo-list-top-detail-view'>
+      <div class='todo-list-topLeft-detail'>
+        <h1 class="inputValue">Title :" {{#if editingName}}
+          <form {{action 'editItemName' newItem itemInfo.id on='submit' }} id='newTitle'>
+            {{input value=newItem.name placeholder='Item name' class='todo-list-detail-itemName'}}
+          </form>
+          {{else}}
+          <span {{action 'toggleEditState' 'name'}}>
+            <span class="inputClick">{{itemInfo.name}}</span>
+          </span>
+          {{/if}}"</h1>
+      </div>
+
+
+      <div class='todo-list-topRight-detail'>
+        <button {{action 'delItem' itemInfo}} class='delBtn'>Del</button>
+        <button {{action 'toggleBox' itemInfo}} class='closeBtn'>X</button>
+      </div>
+    </div>
+
+    <div class='todo-list-bottom-detail-view'>
+
+      <h2>Description : "
+        <span class="inputClick"></span>
+        {{#if editingDesc}}
+        <form {{action 'editItemDescription' newItem itemInfo.id on='submit' }} class='newDesc'>
+          {{input class='todo-list-detail-itemDesc' value=newItem.description placeholder='Click to Enter a Description here.'}}
+        </form>
+
+        {{else}}
+        <span {{action 'toggleEditState' 'description'}}>{{itemInfo.description}}</span>
+        {{/if}}"</h2>
+
+      <h3>"Click" title/decscription to edit!</h3>
+    </div>
+  </div>
+
+</div>

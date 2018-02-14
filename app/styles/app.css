@@ -1,0 +1,155 @@
+body {
+  background: #f3efef;
+  display: flex;
+  justify-content: center;
+}
+#ember280 {
+  width: 100%;
+}
+
+#ember274 {
+  width: 100%;
+  margin: 0 auto;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 800px;
+  position: relative;
+}
+
+h1 {
+  margin: 10px auto;
+  padding: 10px;
+  letter-spacing: 5px;
+}
+
+h2 {
+  display: flex;
+}
+
+.todo-List {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border: 1px black solid;
+  min-height: 200px;
+  background: azure;
+  padding: 10px;
+  border-radius: 27px;
+}
+
+.todo-lists > .ember-view {
+  padding: 4px 4px;
+  border: 0.3px black dotted;
+  margin: 4px 0px !important;
+}
+
+.todo-list-top {
+  padding: 5px;
+  text-align: center;
+  font-size: 20px;
+  letter-spacing: 2px;
+  border: 2px sienna solid;
+}
+
+.todo-list-bottom {
+  min-height: 200px;
+  margin-top: 10px;
+  padding: 5px;
+}
+
+.list-component {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  background: aquamarine;
+}
+
+.list-component .ember-view {
+  margin: 0px 10px;
+}
+
+.todo-list-addList-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  margin: 0px 20px;
+  background: whitesmoke;
+  margin: 30px 20px;
+}
+.todo-list-addItem {
+  height: 25px;
+  font-weight: 700;
+  font-size: smaller;
+  border-radius: 4px;
+}
+
+.todo-list-detail-itemDesc {
+  font-weight: 900;
+}
+
+.inputClick {
+  cursor: pointer;
+}
+
+.todo-list-listNameBtn-addList {
+  font-size: large;
+}
+
+.todo-list-input-addItem {
+  height: 22px;
+}
+
+.todo-list-detail-view-container {
+  width: 50%;
+  margin: auto;
+  position: absolute;
+  left: 25%;
+  top: 20%;
+}
+
+.todo-list-detail-body {
+  background: paleturquoise;
+  border: teal 7px solid;
+}
+
+.todo-list-top-detail-view {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 10px;
+  border: 1px solid;
+}
+
+.todo-list-bottom-detail-view {
+  padding: 0px 10px;
+}
+
+.todo-list-title-detail {
+  display: flex;
+}
+
+.delBtn,
+.closeBtn {
+  width: 60px;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.closeBtn {
+  width: 40px;
+}
+
+input {
+  height: 30px;
+  font-size: large;
+  padding-left: 10px;
+  letter-spacing: 2px;
+  border-radius: 7px;
+}
+
+.inputValue {
+  display: flex;
+}

@@ -1,0 +1,17 @@
+<p class='todo-list-add-item-container'>
+	{{#if inputable}}
+	<div class='todo-list-addItem'>
+		<form {{action 'addItem' newItem listId on='submit' }} class='addItem'>
+			{{input value=newItem.name placeholder='Item Name Here' class='todo-list-input-addItem'}}
+		</form>
+		<span {{action 'editInput'}} class='todo-list-input-addItem'>
+		</span>
+	</div>
+
+	{{else}}
+	<button {{action 'editInput'}} class='todo-list-addItem'>
+		Add an Item
+	</button>
+	{{/if}}
+
+</p>
