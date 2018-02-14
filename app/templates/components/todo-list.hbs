@@ -5,7 +5,7 @@
 		</div>
 		<div class='todo-list-bottom'>
 			<div class='todo-lists'>
-				{{#each list.items as |item index|}} {{todo-item item=item selectItem='selectItem'}} {{/each}}
+				{{#each list.items as |item|}} {{todo-item item=item selectItem='selectItem'}} {{/each}}
 			</div>
 
 			{{add-item newItem=newItem addItem='addItem' listId=list.id}}

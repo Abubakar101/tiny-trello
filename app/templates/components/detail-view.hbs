@@ -4,7 +4,7 @@
 
     <div class='todo-list-top-detail-view'>
       <div class='todo-list-topLeft-detail'>
-        <h1 class="inputValue">Title :" {{#if editingName}}
+        <h1 class="inputValue">Title :" {{#if editName}}
           <form {{action 'editItemName' newItem itemInfo.id on='submit' }} id='newTitle'>
             {{input value=newItem.name placeholder='Item name' class='todo-list-detail-itemName'}}
           </form>
@@ -26,13 +26,13 @@
 
       <h2>Description : "
         <span class="inputClick"></span>
-        {{#if editingDesc}}
-        <form {{action 'editItemDescription' newItem itemInfo.id on='submit' }} class='newDesc'>
-          {{input class='todo-list-detail-itemDesc' value=newItem.description placeholder='Click to Enter a Description here.'}}
+        {{#if editDesc}}
+        <form {{action 'editItemDesc' newItem itemInfo.id on='submit' }} class='newDesc'>
+          {{input value=newItem.desc placeholder='Click to Enter a Description here.' class='todo-list-detail-itemDesc'}}
         </form>
 
         {{else}}
-        <span {{action 'toggleEditState' 'description'}}>{{itemInfo.description}}</span>
+        <span {{action 'toggleEditState' 'desc'}}>{{itemInfo.desc}}</span>
         {{/if}}"</h2>
 
       <h3>"Click" title/decscription to edit!</h3>

@@ -12,7 +12,7 @@ export default Controller.extend({
       if (newItem.name) {
         let addNewItem = this.store.createRecord("item", {
           name: newItem.name,
-          description: "Click Enter a Description."
+          desc: "Click Enter a Description."
         });
 
         this.store.findRecord("list", listId).then(list => {
