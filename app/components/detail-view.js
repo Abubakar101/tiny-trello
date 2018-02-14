@@ -47,7 +47,7 @@ export default Component.extend({
       console.log(item.id);
       let comfirm = confirm("Are you sure?");
       if (comfirm) {
-        let thisItem = this.get("store")
+        this.get("store")
           .peekRecord("item", item.id)
           .destroyRecord();
 
