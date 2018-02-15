@@ -1,11 +1,11 @@
 # tiny-trello
 
 
-My tiny Trello’s project in Ember.JS. I spent few days learning Ember since last Friday(when the coding challenge was given). 
+My tiny Trello’s project in Ember.JS. I spent a few days learning Ember since last Friday(when the coding challenge was given). I followed the tutorial guide from the Ember's official website and created my first app in Ember before starting Trello's project.
 
-I followed the tutorial guide from Ember's official website and created my first app in Ember which didn’t work in the end. (Leaving me with uneasy feeling of my next Trello’s project). I watched Youtube’s videos of other people making their apps and I tried to understand their thinking’s styles and how they broke up their javascript functionality and how they called them and where and why.
+I spent a lot of time learning how Ember works, then I started my own Trello app. You can add the list(s) and items, descriptions with custom's names. You can also edit/delete the item/description. However, there's a problem while deleting an item with a description. That particular list doesn't allow any more items or descriptions to be added or changed or deleted. The error points to "Mirage" and states that (deleted) ID not found in the database. I have used the Ember's documents, and searched online.
 
-Most of the time went there to understand how the Ember works. After that, I started my own Trello app but I got stuck on adding a description of an item and then deleting it. I couldn’t add after deleting the item with a description. I searched the error which pointed to "Mirage" and stating that (deleted) ID not found in the database, which only happens after adding the description. And after searching online and reading documents, I couldn’t pinpoint the error in the code.
+I look forward to learning Ember.js on this position and grow up as a better developer.
 
 ## Prerequisites
 
