@@ -1,7 +1,11 @@
 # tiny-trello
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+
+My tiny Trello’s project in Ember.JS. I spent few days learning Ember since last Friday(when the coding challenge was given). 
+
+I followed the tutorial guide from Ember's official website and created my first app in Ember which didn’t work in the end. (Leaving me with uneasy feeling of my next Trello’s project). I watched Youtube’s videos of other people making their apps and I tried to understand their thinking’s styles and how they broke up their javascript functionality and how they called them and where and why.
+
+Most of the time went there to understand how the Ember works. After that, I started my own Trello app but I got stuck on adding a description of an item and then deleting it. I couldn’t add after deleting the item with a description. I searched the error which pointed to "Mirage" and stating that (deleted) ID not found in the database, which only happens after adding the description. And after searching online and reading documents, I couldn’t pinpoint the error in the code.
 
 ## Prerequisites
 
